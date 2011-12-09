@@ -1,0 +1,18 @@
+<p>
+  <b>Vin:</b>
+  <%=h @vehicle.vin %>
+</p>
+
+<p>
+  <b>Year:</b>
+  <%=h @vehicle.year %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%=h @vehicle.location %>
+</p>
+
+
+<%= link_to 'Edit', edit_vehicle_path(@vehicle) %> |
+<%= link_to 'Back', vehicles_path %>
