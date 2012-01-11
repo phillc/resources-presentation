@@ -1,17 +1,18 @@
 <%= my_form "/vehicles" %>
   <p>
-    <label for="vehicle_vin">Vin</label><br />
-    <input id="vehicle_vin" name="vehicle[vin]" size="30" type="text" />
+    <%= my_label "vehicle_vin", "Vin" %><br />
+    <%= my_text_field "vehicle[vin]", :id => "vehicle_vin" %>
   </p>
   <p>
-    <label for="vehicle_year">Year</label><br />
-    <input id="vehicle_year" name="vehicle[year]" size="30" type="text" />
+    <%= my_label "vehicle_year", "Year" %><br />
+    <%= my_text_field "vehicle[year]", :id => "vehicle_year" %>
   </p>
   <p>
-    <label for="vehicle_location">Location</label><br />
-    <input id="vehicle_location" name="vehicle[location]" size="30" type="text" />
+    <%= my_label "vehicle_location", "Location" %><br />
+    <%= my_text_field "vehicle[location]", :id => "vehicle_location" %>
   </p>
   <p>
+    <%= my_submit "Submit", :id => "vehicle_submit" %>
     <input id="vehicle_submit" name="commit" type="submit" value="Submit" />
   </p>
 </form>
